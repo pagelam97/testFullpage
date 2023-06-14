@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
+    <script type="text/javascript" src="./jquery-3.6.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="fullpage">
+            <div class="section">Some section1</div>
+            <div class="section">Some section2</div>
+            <div class="section">Some section3</div>
+            <div class="section">Some section4</div>
+            <div class="section">Some section5</div>
+            <div class="section">Some section6</div>
+            <div class="section">Some section7</div>
+        </div>
+    </div>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            scrollingSpeed: 500,
+            // licenseKey:null
+            sectionsColor: ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#00FFFF", "#0000FF", "#8B00FF"],
+            // loopTop:true,
+            // loopBottom:true,
+            navigation: true,
+            navigationPosition: "right",
+            // navigationTooltips:['1',"2","3","4","5","6","7"],
+            // continuousVertical:true
+
+        });
+    </script>
+</body>
+
+</html>
